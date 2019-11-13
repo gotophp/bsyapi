@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>日报表 | ERP API文档</title>
+    <meta name="description" content="V0.0.1">
+    <link rel="icon" href="/logo.ico">
+    
+    <link rel="preload" href="/assets/css/0.styles.67078fec.css" as="style"><link rel="preload" href="/assets/js/app.aea6f530.js" as="script"><link rel="preload" href="/assets/js/3.f140dbeb.js" as="script"><link rel="preload" href="/assets/js/2.7cdc948c.js" as="script"><link rel="preload" href="/assets/js/13.035eb2c9.js" as="script"><link rel="preload" href="/assets/js/4.b20c5b42.js" as="script"><link rel="prefetch" href="/assets/js/10.462eb922.js"><link rel="prefetch" href="/assets/js/11.3c440f4b.js"><link rel="prefetch" href="/assets/js/12.07a66b62.js"><link rel="prefetch" href="/assets/js/14.8279a714.js"><link rel="prefetch" href="/assets/js/15.9bf31ed0.js"><link rel="prefetch" href="/assets/js/16.79795c75.js"><link rel="prefetch" href="/assets/js/17.6a27ddb9.js"><link rel="prefetch" href="/assets/js/18.50794d6b.js"><link rel="prefetch" href="/assets/js/19.9c5388de.js"><link rel="prefetch" href="/assets/js/20.9bac4a6c.js"><link rel="prefetch" href="/assets/js/21.a7697b51.js"><link rel="prefetch" href="/assets/js/22.3e53cfe0.js"><link rel="prefetch" href="/assets/js/23.1e6e8a06.js"><link rel="prefetch" href="/assets/js/24.3d785912.js"><link rel="prefetch" href="/assets/js/25.84eea2a5.js"><link rel="prefetch" href="/assets/js/26.6f08e505.js"><link rel="prefetch" href="/assets/js/27.70529efd.js"><link rel="prefetch" href="/assets/js/28.54afb9fc.js"><link rel="prefetch" href="/assets/js/29.c2937a2d.js"><link rel="prefetch" href="/assets/js/30.38c77a58.js"><link rel="prefetch" href="/assets/js/31.35957dd8.js"><link rel="prefetch" href="/assets/js/32.8df49d8f.js"><link rel="prefetch" href="/assets/js/33.7a8afe64.js"><link rel="prefetch" href="/assets/js/34.e1f50fa8.js"><link rel="prefetch" href="/assets/js/35.7381fc7a.js"><link rel="prefetch" href="/assets/js/36.d2b7cc9f.js"><link rel="prefetch" href="/assets/js/37.9b2c9307.js"><link rel="prefetch" href="/assets/js/38.01be7693.js"><link rel="prefetch" href="/assets/js/39.25684b53.js"><link rel="prefetch" href="/assets/js/40.e1757c8f.js"><link rel="prefetch" href="/assets/js/41.d7bfcf42.js"><link rel="prefetch" href="/assets/js/5.812583d1.js"><link rel="prefetch" href="/assets/js/6.7f4ab6ef.js"><link rel="prefetch" href="/assets/js/7.e24b5381.js"><link rel="prefetch" href="/assets/js/8.f6bd83cf.js"><link rel="prefetch" href="/assets/js/9.1302c748.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.67078fec.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo.ico" alt="ERP API文档" class="logo"> <span class="site-name can-hide">ERP API文档</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">介绍</a></div><div class="nav-item"><a href="/guide/start/oauth.html" class="nav-link">开始</a></div><div class="nav-item"><a href="http://www.baisyi.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  关于我们
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">介绍</a></div><div class="nav-item"><a href="/guide/start/oauth.html" class="nav-link">开始</a></div><div class="nav-item"><a href="http://www.baisyi.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  关于我们
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>接口文档</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/guide/dir/ls.html" class="sidebar-link">目录结构</a></li><li><a href="/guide/dir/code.html" class="sidebar-link">HTTP异常码</a></li><li><a href="/guide/dir/codere.html" class="sidebar-link">报表分组与查询条件说明</a></li><li><a href="/guide/dir/norm.html" class="sidebar-link">开发者规范</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>开始开发</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>用户信息</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>报表中心</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>配件分析报表</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>合计报表</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/guide/day/day.html" class="active sidebar-link">日报表</a></li><li><a href="/guide/day/month.html" class="sidebar-link">月报表</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="content default"><h1 id="日报表"><a href="#日报表" aria-hidden="true" class="header-anchor">#</a> 日报表</h1> <div class="warning custom-block"><p>注意当前页面有需要合计数据  不懂询问小麻</p></div> <div id="apiclass"><div class="el-tabs el-tabs--top"><div class="el-tabs__header is-top"><div class="el-tabs__nav-wrap is-top"><div class="el-tabs__nav-scroll"><div role="tablist" class="el-tabs__nav is-top" style="transform:translateX(-0px);"><div class="el-tabs__active-bar is-top" style="width:0px;transform:translateX(0px);ms-transform:translateX(0px);webkit-transform:translateX(0px);"></div></div></div></div></div><div class="el-tabs__content"><div role="tabpanel" aria-hidden="true" id="pane-null" aria-labelledby="tab-null" class="el-tab-pane" style="display:none;"><div class="custom-input el-input is-disabled el-input-group el-input-group--prepend"><div class="el-input-group__prepend">接口名称</div><input type="text" disabled="disabled" autocomplete="off" class="el-input__inner"><!----><!----><!----></div> <div class="custom-input el-input is-disabled el-input-group el-input-group--prepend"><div class="el-input-group__prepend">GET</div><input type="text" disabled="disabled" autocomplete="off" class="el-input__inner"><!----><!----><!----></div> <div class="el-tabs el-tabs--top"><div class="el-tabs__header is-top"><div class="el-tabs__nav-wrap is-top"><div class="el-tabs__nav-scroll"><div role="tablist" class="el-tabs__nav is-top" style="transform:translateX(-0px);"><div class="el-tabs__active-bar is-top" style="width:0px;transform:translateX(0px);ms-transform:translateX(0px);webkit-transform:translateX(0px);"></div></div></div></div></div><div class="el-tabs__content"><div role="tabpanel" aria-hidden="true" id="pane-null" aria-labelledby="tab-null" class="el-tab-pane tab-pane-item" style="display:none;"><div class="el-card box-card is-always-shadow"><div class="el-card__header"><div class="clearfix"><span class="custom-tag el-tag">header</span></div></div><div class="el-card__body"> <div class="text item item-header"><div class="div-text">KEY</div><div class="div-require">REQUIRE</div>DESCRIPTION
+                    </div> <div class="text item"><div class="div-text">Authorization</div><div class="div-require">是</div>Bearer  `access_token`
+                            </div></div></div> <div class="el-card box-card is-always-shadow"><div class="el-card__header"><div class="clearfix"><span class="custom-tag el-tag">body</span></div></div><div class="el-card__body"> <div class="text item item-header"><div class="div-text">KEY</div> <div class="div-require">TYPE</div> <div class="div-require">REQUIRE</div>
+                         DESCRIPTION
+                         <div class="div-default">DEFAULT</div></div> <div class="text item"><div class="el-tooltip div-text">
+                                    cid
+                                </div> <div class="div-require"><span class="el-tag el-tag--danger el-tag--mini">number</span></div> <div class="div-require">是</div>
+                           商户id
+                            <div class="el-tooltip div-default">商户id</div></div><div class="text item"><div class="el-tooltip div-text">
+                                    comno
+                                </div> <div class="div-require"><span class="el-tag el-tag--danger el-tag--mini">string</span></div> <div class="div-require">是</div>
+                           类似 A01,A02 逗号分隔
+                            <div class="el-tooltip div-default">门店参数</div></div><div class="text item"><div class="el-tooltip div-text">
+                                    company
+                                </div> <div class="div-require"><span class="el-tag el-tag--danger el-tag--mini">number</span></div> <div class="div-require">是</div>
+                           只允许单商户查询
+                            <div class="el-tooltip div-default">商户参数</div></div><div class="text item"><div class="el-tooltip div-text">
+                                    start
+                                </div> <div class="div-require"><span class="el-tag el-tag--danger el-tag--mini">date</span></div> <div class="div-require">是</div>
+                           格式2000-01-01 当start存在的时候，date_name与end也必须存在
+                            <div class="el-tooltip div-default">开始时间</div></div><div class="text item"><div class="el-tooltip div-text">
+                                    end
+                                </div> <div class="div-require"><span class="el-tag el-tag--danger el-tag--mini">date</span></div> <div class="div-require">是</div>
+                           格式2000-01-01 当end存在的时候，date_name与start也必须存在
+                            <div class="el-tooltip div-default">结束时间</div></div></div></div> <div class="el-tabs el-tabs--top"><div class="el-tabs__header is-top"><div class="el-tabs__nav-wrap is-top"><div class="el-tabs__nav-scroll"><div role="tablist" class="el-tabs__nav is-top" style="transform:translateX(-0px);"><div class="el-tabs__active-bar is-top" style="width:0px;transform:translateX(0px);ms-transform:translateX(0px);webkit-transform:translateX(0px);"></div></div></div></div></div><div class="el-tabs__content"><span class="custom-tag el-tag" style="position:absolute;top:15px;right:0%;">response</span> <div role="tabpanel" aria-hidden="true" id="pane-null" aria-labelledby="tab-null" class="el-tab-pane" style="display:none;"><pre><code class="hljs json">{
+    <span class="hljs-attr">"status"</span>: <span class="hljs-string">"success"</span>,
+    <span class="hljs-attr">"data"</span>: {
+        <span class="hljs-attr">"in_arrear_amount"</span>: <span class="hljs-number">2540</span>,
+        <span class="hljs-attr">"inuser_arrear_amount"</span>: <span class="hljs-number">1805</span>,
+        <span class="hljs-attr">"in_other_amount"</span>: <span class="hljs-string">"[{"</span>acc_type<span class="hljs-string">":"</span>卡券<span class="hljs-string">","</span>amount<span class="hljs-string">":1556.01},{"</span>acc_type<span class="hljs-string">":"</span>挂帐<span class="hljs-string">","</span>amount<span class="hljs-string">":4580},{"</span>acc_type<span class="hljs-string">":"</span>储值卡<span class="hljs-string">","</span>amount<span class="hljs-string">":3722.7999999999997}]"</span>,
+        <span class="hljs-attr">"in_actual_amount"</span>: <span class="hljs-string">"[{"</span>acc_type<span class="hljs-string">":"</span>现金<span class="hljs-string">","</span>amount<span class="hljs-string">":49194.81},{"</span>acc_type<span class="hljs-string">":"</span>刷卡<span class="hljs-string">","</span>amount<span class="hljs-string">":630},{"</span>acc_type<span class="hljs-string">":"</span>微信<span class="hljs-string">","</span>amount<span class="hljs-string">":1042.25},{"</span>acc_type<span class="hljs-string">":1,"</span>amount<span class="hljs-string">":4343}]"</span>,
+        <span class="hljs-attr">"main_server_amount"</span>: <span class="hljs-string">"[{"</span>rec_type<span class="hljs-string">":"</span>机修<span class="hljs-string">","</span>price<span class="hljs-string">":1109,"</span>amount<span class="hljs-string">":907.801816,"</span>cost_price<span class="hljs-string">":122},{"</span>rec_type<span class="hljs-string">":"</span>装潢<span class="hljs-string">","</span>price<span class="hljs-string">":680,"</span>amount<span class="hljs-string">":642.2475469999999,"</span>cost_price<span class="hljs-string">":125},{"</span>rec_type<span class="hljs-string">":"</span>一般修理<span class="hljs-string">","</span>price<span class="hljs-string">":19418.2,"</span>amount<span class="hljs-string">":19098.770637,"</span>cost_price<span class="hljs-string">":2262}]"</span>,
+        <span class="hljs-attr">"sales_amount"</span>: <span class="hljs-string">"[{"</span>member_set_type<span class="hljs-string">":"</span>预收<span class="hljs-string">","</span>amount<span class="hljs-string">":1600},{"</span>member_set_type<span class="hljs-string">":"</span>限次数<span class="hljs-string">","</span>amount<span class="hljs-string">":2290},{"</span>member_set_type<span class="hljs-string">":"</span>储值卡<span class="hljs-string">","</span>amount<span class="hljs-string">":20000}]"</span>,
+        <span class="hljs-attr">"main_part_amount"</span>: <span class="hljs-string">"{"</span>amount<span class="hljs-string">":0,"</span>const_price<span class="hljs-string">":0}"</span>,
+        <span class="hljs-attr">"out_arrear_amount"</span>: <span class="hljs-number">21260</span>,
+        <span class="hljs-attr">"outuser_arrear_amount"</span>: <span class="hljs-number">0</span>,
+        <span class="hljs-attr">"out_other_amount"</span>: <span class="hljs-string">"[]"</span>,
+        <span class="hljs-attr">"out_actual_amount"</span>: <span class="hljs-string">"[{"</span>acc_type<span class="hljs-string">":"</span>挂账<span class="hljs-string">","</span>amount<span class="hljs-string">":21260},{"</span>acc_type<span class="hljs-string">":"</span>现金<span class="hljs-string">","</span>amount<span class="hljs-string">":901}]"</span>,
+        <span class="hljs-attr">"other_in_amount"</span>: <span class="hljs-string">"[]"</span>,
+        <span class="hljs-attr">"other_out_amount"</span>: <span class="hljs-string">"[{"</span>charge<span class="hljs-string">":"</span>房租<span class="hljs-string">","</span>amount<span class="hljs-string">":111},{"</span>charge<span class="hljs-string">":"</span>管理员<span class="hljs-number">1</span><span class="hljs-string">","</span>amount<span class="hljs-string">":10},{"</span>charge<span class="hljs-string">":"</span>水电<span class="hljs-string">","</span>amount<span class="hljs-string">":20}]"</span>,
+        <span class="hljs-attr">"in_cash"</span>: <span class="hljs-number">25</span>,
+        <span class="hljs-attr">"in_car"</span>: <span class="hljs-number">11</span>,
+        <span class="hljs-attr">"in_shop"</span>: <span class="hljs-number">50</span>,
+        <span class="hljs-attr">"in_wecaht"</span>: <span class="hljs-number">12</span>,
+        <span class="hljs-attr">"in_repair"</span>: <span class="hljs-number">20</span>,
+        <span class="hljs-attr">"profit_amount"</span>: <span class="hljs-number">1600</span>,
+        <span class="hljs-attr">"in_amount"</span>: <span class="hljs-number">2953</span>,
+        <span class="hljs-attr">"out_amount"</span>: <span class="hljs-number">3376</span>,
+        <span class="hljs-attr">"create_at"</span>: <span class="hljs-string">"2019-06-29 02:01:55"</span>,
+        <span class="hljs-attr">"stock_amount"</span>: [
+            {
+                <span class="hljs-attr">"comno"</span>: <span class="hljs-string">"A01"</span>,
+                <span class="hljs-attr">"amount"</span>: <span class="hljs-number">19114867.968204997</span>
+            },
+            {
+                <span class="hljs-attr">"comno"</span>: <span class="hljs-string">"A02"</span>,
+                <span class="hljs-attr">"amount"</span>: <span class="hljs-number">143352.31000000006</span>
+            }
+        ],
+        <span class="hljs-attr">"card_amount"</span>: [
+            {
+                <span class="hljs-attr">"comno"</span>: <span class="hljs-string">"A01"</span>,
+                <span class="hljs-attr">"amount"</span>: <span class="hljs-string">"436980.240000"</span>
+            },
+            {
+                <span class="hljs-attr">"comno"</span>: <span class="hljs-string">"A02"</span>,
+                <span class="hljs-attr">"amount"</span>: <span class="hljs-string">"4619.800000"</span>
+            }
+        ]
+    }
+}</code></pre></div></div></div></div> <div role="tabpanel" aria-hidden="true" id="pane-null" aria-labelledby="tab-null" class="el-tab-pane" style="display:none;"><div class="el-card box-card is-always-shadow"><!----><div class="el-card__body"> <div class="text item"><pre><code class="hljs json">{
+    'in_arrear_amount'  '应收',
+    'inuser_arrear_amount'  '收客户欠款',
+    'in_other_amount'         '入账其他结算',
+    'in_actual_amount'         '入账实际收款',
+    'main_server_amount'         '主营收入维修类',
+    'sales_amount'         '增值业务',
+    'main_part_amount'         '主营收入配件类',
+    'out_arrear_amount'         '应付',
+    'outuser_arrear_amount'         '供应商欠款',
+    'out_other_amount'         '出账其他结算',
+    'out_actual_amount'         '出账实际收款',
+    'other_in_amount'         '其它收入',
+    'other_out_amount'         '其它支出',
+    'card_amount'         '储值卡余额', //储值卡余额
+    'stock_amount'         '库存合计', //
+    'in_cash'         '收银数',
+    'in_car'         '新增车辆次数',
+    'in_wecaht'         '微信关注',
+    'in_repair'         '在修数',
+    'in_shop'         '进店数',
+    'profit_amount'         '盈亏金额',
+    'in_amount'         '入库金额',
+    'out_amount'         '出库金额',
+    'card_amount'       '储值卡余额'
+    'stock_amount'       '库存成本'
+}</code></pre></div></div></div></div></div></div></div></div></div></div></div> <div><ul class="right-nav"></ul></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">上次更新: </span> <span class="time">2019-06-29  17:13:3 </span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/guide/part/change.html" class="prev">
+          库存修改
+        </a></span> <span class="next"><a href="/guide/day/month.html">
+          月报表
+        </a>
+        →
+      </span></p></div> <div class="page-bottom">百思易科技有限公司</div></main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.aea6f530.js" defer></script><script src="/assets/js/3.f140dbeb.js" defer></script><script src="/assets/js/2.7cdc948c.js" defer></script><script src="/assets/js/13.035eb2c9.js" defer></script><script src="/assets/js/4.b20c5b42.js" defer></script>
+  </body>
+</html>

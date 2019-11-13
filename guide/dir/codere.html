@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>报表分组与查询条件说明 | ERP API文档</title>
+    <meta name="description" content="V0.0.1">
+    <link rel="icon" href="/logo.ico">
+    
+    <link rel="preload" href="/assets/css/0.styles.67078fec.css" as="style"><link rel="preload" href="/assets/js/app.aea6f530.js" as="script"><link rel="preload" href="/assets/js/3.f140dbeb.js" as="script"><link rel="preload" href="/assets/js/2.7cdc948c.js" as="script"><link rel="preload" href="/assets/js/16.79795c75.js" as="script"><link rel="preload" href="/assets/js/6.7f4ab6ef.js" as="script"><link rel="prefetch" href="/assets/js/10.462eb922.js"><link rel="prefetch" href="/assets/js/11.3c440f4b.js"><link rel="prefetch" href="/assets/js/12.07a66b62.js"><link rel="prefetch" href="/assets/js/13.035eb2c9.js"><link rel="prefetch" href="/assets/js/14.8279a714.js"><link rel="prefetch" href="/assets/js/15.9bf31ed0.js"><link rel="prefetch" href="/assets/js/17.6a27ddb9.js"><link rel="prefetch" href="/assets/js/18.50794d6b.js"><link rel="prefetch" href="/assets/js/19.9c5388de.js"><link rel="prefetch" href="/assets/js/20.9bac4a6c.js"><link rel="prefetch" href="/assets/js/21.a7697b51.js"><link rel="prefetch" href="/assets/js/22.3e53cfe0.js"><link rel="prefetch" href="/assets/js/23.1e6e8a06.js"><link rel="prefetch" href="/assets/js/24.3d785912.js"><link rel="prefetch" href="/assets/js/25.84eea2a5.js"><link rel="prefetch" href="/assets/js/26.6f08e505.js"><link rel="prefetch" href="/assets/js/27.70529efd.js"><link rel="prefetch" href="/assets/js/28.54afb9fc.js"><link rel="prefetch" href="/assets/js/29.c2937a2d.js"><link rel="prefetch" href="/assets/js/30.38c77a58.js"><link rel="prefetch" href="/assets/js/31.35957dd8.js"><link rel="prefetch" href="/assets/js/32.8df49d8f.js"><link rel="prefetch" href="/assets/js/33.7a8afe64.js"><link rel="prefetch" href="/assets/js/34.e1f50fa8.js"><link rel="prefetch" href="/assets/js/35.7381fc7a.js"><link rel="prefetch" href="/assets/js/36.d2b7cc9f.js"><link rel="prefetch" href="/assets/js/37.9b2c9307.js"><link rel="prefetch" href="/assets/js/38.01be7693.js"><link rel="prefetch" href="/assets/js/39.25684b53.js"><link rel="prefetch" href="/assets/js/4.b20c5b42.js"><link rel="prefetch" href="/assets/js/40.e1757c8f.js"><link rel="prefetch" href="/assets/js/41.d7bfcf42.js"><link rel="prefetch" href="/assets/js/5.812583d1.js"><link rel="prefetch" href="/assets/js/7.e24b5381.js"><link rel="prefetch" href="/assets/js/8.f6bd83cf.js"><link rel="prefetch" href="/assets/js/9.1302c748.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.67078fec.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo.ico" alt="ERP API文档" class="logo"> <span class="site-name can-hide">ERP API文档</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">介绍</a></div><div class="nav-item"><a href="/guide/start/oauth.html" class="nav-link">开始</a></div><div class="nav-item"><a href="http://www.baisyi.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  关于我们
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">介绍</a></div><div class="nav-item"><a href="/guide/start/oauth.html" class="nav-link">开始</a></div><div class="nav-item"><a href="http://www.baisyi.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  关于我们
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>接口文档</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/guide/dir/ls.html" class="sidebar-link">目录结构</a></li><li><a href="/guide/dir/code.html" class="sidebar-link">HTTP异常码</a></li><li><a href="/guide/dir/codere.html" class="active sidebar-link">报表分组与查询条件说明</a></li><li><a href="/guide/dir/norm.html" class="sidebar-link">开发者规范</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>开始开发</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>用户信息</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>报表中心</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>配件分析报表</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>合计报表</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="content default"><h1 id="报表分组与查询条件说明"><a href="#报表分组与查询条件说明" aria-hidden="true" class="header-anchor">#</a> 报表分组与查询条件说明</h1> <div role="tablist" aria-multiselectable="true" class="el-collapse"><div class="el-collapse-item"><div role="tab" aria-controls="el-collapse-content-6081" aria-describedby="el-collapse-content-8795"><div role="button" id="el-collapse-head-3629" tabindex="0" class="el-collapse-item__header"><i class="header-icon el-icon-view"></i>维修汇总分析
+        <i class="el-collapse-item__arrow el-icon-arrow-right"></i></div></div><div role="tabpanel" aria-hidden="true" aria-labelledby="el-collapse-head-7863" id="el-collapse-content-2201" class="el-collapse-item__wrap" style="display:none;"><div class="el-collapse-item__content"> <pre><code class="hljs json">[
+  {
+    <span class="hljs-attr">"RecTypeD"</span>: <span class="hljs-string">"业务类型"</span>,
+    <span class="hljs-attr">"Brand"</span>: <span class="hljs-string">"品牌"</span>,
+    <span class="hljs-attr">"RecPersonName"</span>: <span class="hljs-string">"服务顾问"</span>,
+    <span class="hljs-attr">"ReceptionSource"</span>: <span class="hljs-string">"客户来源"</span>,
+    <span class="hljs-attr">"VehicleLevel"</span>: <span class="hljs-string">"车辆级别"</span>,
+    <span class="hljs-attr">"InvoiceType"</span>: <span class="hljs-string">"发票类型"</span>,
+    <span class="hljs-attr">"JobType"</span>: <span class="hljs-string">"项目类型"</span>,
+    <span class="hljs-attr">"CModel"</span>: <span class="hljs-string">"车型"</span>,
+    <span class="hljs-attr">"Class"</span>: <span class="hljs-string">"班组"</span>,
+    <span class="hljs-attr">"MainWorker"</span>: <span class="hljs-string">"主修员"</span>,
+    <span class="hljs-attr">"SalesName"</span>: <span class="hljs-string">"亲密顾问"</span>
+  }
+]</code></pre></div></div></div><div class="el-collapse-item"><div role="tab" aria-controls="el-collapse-content-9820" aria-describedby="el-collapse-content-4954"><div role="button" id="el-collapse-head-642" tabindex="0" class="el-collapse-item__header"><i class="header-icon el-icon-view"></i>服务项目分析
+        <i class="el-collapse-item__arrow el-icon-arrow-right"></i></div></div><div role="tabpanel" aria-hidden="true" aria-labelledby="el-collapse-head-3850" id="el-collapse-content-524" class="el-collapse-item__wrap" style="display:none;"><div class="el-collapse-item__content"> <pre><code class="hljs json">[
+  {
+    <span class="hljs-attr">"JobName"</span>: <span class="hljs-string">"服务项目"</span>,
+    <span class="hljs-attr">"RecTypeD"</span>: <span class="hljs-string">"业务类型"</span>,
+    <span class="hljs-attr">"Class"</span>: <span class="hljs-string">"班组"</span>,
+    <span class="hljs-attr">"MainWorker"</span>: <span class="hljs-string">"主修员"</span>,
+    <span class="hljs-attr">"SalesLeader"</span>: <span class="hljs-string">"销售员"</span>,
+    <span class="hljs-attr">"JobType"</span>: <span class="hljs-string">"项目类型"</span>
+  }
+]</code></pre></div></div></div><div class="el-collapse-item"><div role="tab" aria-controls="el-collapse-content-1906" aria-describedby="el-collapse-content-998"><div role="button" id="el-collapse-head-2808" tabindex="0" class="el-collapse-item__header"><i class="header-icon el-icon-view"></i>配件分析
+        <i class="el-collapse-item__arrow el-icon-arrow-right"></i></div></div><div role="tabpanel" aria-hidden="true" aria-labelledby="el-collapse-head-6337" id="el-collapse-content-7545" class="el-collapse-item__wrap" style="display:none;"><div class="el-collapse-item__content"> <pre><code class="hljs json">[
+  {
+    <span class="hljs-attr">"Attribute5"</span>: <span class="hljs-string">"分类"</span>,
+    <span class="hljs-attr">"RecTypeD"</span>: <span class="hljs-string">"业务类型"</span>,
+    <span class="hljs-attr">"Attribute3"</span>: <span class="hljs-string">"产地"</span>,
+    <span class="hljs-attr">"SalesLeader"</span>: <span class="hljs-string">"销售员"</span>,
+    <span class="hljs-attr">"Class"</span>: <span class="hljs-string">"班组"</span>,
+    <span class="hljs-attr">"MainWorker"</span>: <span class="hljs-string">"主修员"</span>,
+    <span class="hljs-attr">"JobType"</span>: <span class="hljs-string">"项目类型"</span>
+  }
+]</code></pre></div></div></div><div class="el-collapse-item"><div role="tab" aria-controls="el-collapse-content-8346" aria-describedby="el-collapse-content-6359"><div role="button" id="el-collapse-head-5398" tabindex="0" class="el-collapse-item__header"><i class="header-icon el-icon-view"></i>储值套餐分析
+        <i class="el-collapse-item__arrow el-icon-arrow-right"></i></div></div><div role="tabpanel" aria-hidden="true" aria-labelledby="el-collapse-head-5116" id="el-collapse-content-124" class="el-collapse-item__wrap" style="display:none;"><div class="el-collapse-item__content"> <pre><code class="hljs json">[
+  {
+    <span class="hljs-attr">"MemberSetName"</span>: <span class="hljs-string">"储值套餐名称"</span>,
+    <span class="hljs-attr">"MemberSetType"</span>: <span class="hljs-string">"储值套餐类型"</span>,
+    <span class="hljs-attr">"SalesmanName"</span>: <span class="hljs-string">"销售员"</span>
+  }
+]</code></pre></div></div></div><div class="el-collapse-item"><div role="tab" aria-controls="el-collapse-content-7322" aria-describedby="el-collapse-content-5549"><div role="button" id="el-collapse-head-1714" tabindex="0" class="el-collapse-item__header"><i class="header-icon el-icon-view"></i>套餐销售对应类型
+        <i class="el-collapse-item__arrow el-icon-arrow-right"></i></div></div><div role="tabpanel" aria-hidden="true" aria-labelledby="el-collapse-head-2981" id="el-collapse-content-6858" class="el-collapse-item__wrap" style="display:none;"><div class="el-collapse-item__content"> <pre><code class="hljs json">[
+  [
+    <span class="hljs-string">"储值卡"</span>,
+    <span class="hljs-string">"限项目"</span>,
+    <span class="hljs-string">"限次数"</span>,
+    <span class="hljs-string">"预收"</span>,
+    <span class="hljs-string">"卡券"</span>
+  ]
+]</code></pre></div></div></div><div class="el-collapse-item"><div role="tab" aria-controls="el-collapse-content-419" aria-describedby="el-collapse-content-7800"><div role="button" id="el-collapse-head-7650" tabindex="0" class="el-collapse-item__header"><i class="header-icon el-icon-view"></i>绩效汇总查询搜索条件
+        <i class="el-collapse-item__arrow el-icon-arrow-right"></i></div></div><div role="tabpanel" aria-hidden="true" aria-labelledby="el-collapse-head-5395" id="el-collapse-content-5839" class="el-collapse-item__wrap" style="display:none;"><div class="el-collapse-item__content"> <pre><code class="hljs json">[
+  {
+    <span class="hljs-attr">"in_date"</span>: <span class="hljs-string">"进厂时间"</span>,
+    <span class="hljs-attr">"money_date"</span>: <span class="hljs-string">"收银时间"</span>,
+    <span class="hljs-attr">"worker"</span>: <span class="hljs-string">"施工员|服务顾问|销售员"</span>,
+    <span class="hljs-attr">"code"</span>: <span class="hljs-string">"工单号"</span>,
+    <span class="hljs-attr">"register_no"</span>: <span class="hljs-string">"车牌"</span>,
+    <span class="hljs-attr">"class"</span>: <span class="hljs-string">"班组"</span>,
+    <span class="hljs-attr">"work_type"</span>: <span class="hljs-string">"业务类型"</span>,
+    <span class="hljs-attr">"name"</span>: <span class="hljs-string">"项目名称|配件名称"</span>
+  }
+]</code></pre></div></div></div></div></div> <div><ul class="right-nav"></ul></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">上次更新: </span> <span class="time">2019-05-11  16:57:46 </span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/guide/dir/code.html" class="prev">
+          HTTP异常码
+        </a></span> <span class="next"><a href="/guide/dir/norm.html">
+          开发者规范
+        </a>
+        →
+      </span></p></div> <div class="page-bottom">百思易科技有限公司</div></main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.aea6f530.js" defer></script><script src="/assets/js/3.f140dbeb.js" defer></script><script src="/assets/js/2.7cdc948c.js" defer></script><script src="/assets/js/16.79795c75.js" defer></script><script src="/assets/js/6.7f4ab6ef.js" defer></script>
+  </body>
+</html>

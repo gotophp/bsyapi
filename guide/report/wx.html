@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>维修汇总分析 | ERP API文档</title>
+    <meta name="description" content="V0.0.1">
+    <link rel="icon" href="/logo.ico">
+    
+    <link rel="preload" href="/assets/css/0.styles.67078fec.css" as="style"><link rel="preload" href="/assets/js/app.aea6f530.js" as="script"><link rel="preload" href="/assets/js/3.f140dbeb.js" as="script"><link rel="preload" href="/assets/js/2.7cdc948c.js" as="script"><link rel="preload" href="/assets/js/34.e1f50fa8.js" as="script"><link rel="preload" href="/assets/js/4.b20c5b42.js" as="script"><link rel="prefetch" href="/assets/js/10.462eb922.js"><link rel="prefetch" href="/assets/js/11.3c440f4b.js"><link rel="prefetch" href="/assets/js/12.07a66b62.js"><link rel="prefetch" href="/assets/js/13.035eb2c9.js"><link rel="prefetch" href="/assets/js/14.8279a714.js"><link rel="prefetch" href="/assets/js/15.9bf31ed0.js"><link rel="prefetch" href="/assets/js/16.79795c75.js"><link rel="prefetch" href="/assets/js/17.6a27ddb9.js"><link rel="prefetch" href="/assets/js/18.50794d6b.js"><link rel="prefetch" href="/assets/js/19.9c5388de.js"><link rel="prefetch" href="/assets/js/20.9bac4a6c.js"><link rel="prefetch" href="/assets/js/21.a7697b51.js"><link rel="prefetch" href="/assets/js/22.3e53cfe0.js"><link rel="prefetch" href="/assets/js/23.1e6e8a06.js"><link rel="prefetch" href="/assets/js/24.3d785912.js"><link rel="prefetch" href="/assets/js/25.84eea2a5.js"><link rel="prefetch" href="/assets/js/26.6f08e505.js"><link rel="prefetch" href="/assets/js/27.70529efd.js"><link rel="prefetch" href="/assets/js/28.54afb9fc.js"><link rel="prefetch" href="/assets/js/29.c2937a2d.js"><link rel="prefetch" href="/assets/js/30.38c77a58.js"><link rel="prefetch" href="/assets/js/31.35957dd8.js"><link rel="prefetch" href="/assets/js/32.8df49d8f.js"><link rel="prefetch" href="/assets/js/33.7a8afe64.js"><link rel="prefetch" href="/assets/js/35.7381fc7a.js"><link rel="prefetch" href="/assets/js/36.d2b7cc9f.js"><link rel="prefetch" href="/assets/js/37.9b2c9307.js"><link rel="prefetch" href="/assets/js/38.01be7693.js"><link rel="prefetch" href="/assets/js/39.25684b53.js"><link rel="prefetch" href="/assets/js/40.e1757c8f.js"><link rel="prefetch" href="/assets/js/41.d7bfcf42.js"><link rel="prefetch" href="/assets/js/5.812583d1.js"><link rel="prefetch" href="/assets/js/6.7f4ab6ef.js"><link rel="prefetch" href="/assets/js/7.e24b5381.js"><link rel="prefetch" href="/assets/js/8.f6bd83cf.js"><link rel="prefetch" href="/assets/js/9.1302c748.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.67078fec.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo.ico" alt="ERP API文档" class="logo"> <span class="site-name can-hide">ERP API文档</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">介绍</a></div><div class="nav-item"><a href="/guide/start/oauth.html" class="nav-link">开始</a></div><div class="nav-item"><a href="http://www.baisyi.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  关于我们
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">介绍</a></div><div class="nav-item"><a href="/guide/start/oauth.html" class="nav-link">开始</a></div><div class="nav-item"><a href="http://www.baisyi.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  关于我们
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>接口文档</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/guide/dir/ls.html" class="sidebar-link">目录结构</a></li><li><a href="/guide/dir/code.html" class="sidebar-link">HTTP异常码</a></li><li><a href="/guide/dir/codere.html" class="sidebar-link">报表分组与查询条件说明</a></li><li><a href="/guide/dir/norm.html" class="sidebar-link">开发者规范</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>开始开发</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>用户信息</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>报表中心</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/guide/report/wx.html" class="active sidebar-link">维修汇总分析</a></li><li><a href="/guide/report/server.html" class="sidebar-link">服务项目分析</a></li><li><a href="/guide/report/part.html" class="sidebar-link">配件分析</a></li><li><a href="/guide/report/sale.html" class="sidebar-link">储值套餐分析</a></li><li><a href="/guide/report/jx.html" class="sidebar-link">绩效汇总</a></li><li><a href="/guide/report/jx1.html" class="sidebar-link">项目施工明细</a></li><li><a href="/guide/report/jx2.html" class="sidebar-link">服务顾问明细</a></li><li><a href="/guide/report/jx3.html" class="sidebar-link">项目配件销售明细</a></li><li><a href="/guide/report/jx4.html" class="sidebar-link">储值套餐明细</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>配件分析报表</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>合计报表</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="content default"><h1 id="维修汇总分析"><a href="#维修汇总分析" aria-hidden="true" class="header-anchor">#</a> 维修汇总分析</h1> <div id="apiclass"><div class="el-tabs el-tabs--top"><div class="el-tabs__header is-top"><div class="el-tabs__nav-wrap is-top"><div class="el-tabs__nav-scroll"><div role="tablist" class="el-tabs__nav is-top" style="transform:translateX(-0px);"><div class="el-tabs__active-bar is-top" style="width:0px;transform:translateX(0px);ms-transform:translateX(0px);webkit-transform:translateX(0px);"></div></div></div></div></div><div class="el-tabs__content"><div role="tabpanel" aria-hidden="true" id="pane-null" aria-labelledby="tab-null" class="el-tab-pane" style="display:none;"><div class="custom-input el-input is-disabled el-input-group el-input-group--prepend"><div class="el-input-group__prepend">接口名称</div><input type="text" disabled="disabled" autocomplete="off" class="el-input__inner"><!----><!----><!----></div> <div class="custom-input el-input is-disabled el-input-group el-input-group--prepend"><div class="el-input-group__prepend">GET</div><input type="text" disabled="disabled" autocomplete="off" class="el-input__inner"><!----><!----><!----></div> <div class="el-tabs el-tabs--top"><div class="el-tabs__header is-top"><div class="el-tabs__nav-wrap is-top"><div class="el-tabs__nav-scroll"><div role="tablist" class="el-tabs__nav is-top" style="transform:translateX(-0px);"><div class="el-tabs__active-bar is-top" style="width:0px;transform:translateX(0px);ms-transform:translateX(0px);webkit-transform:translateX(0px);"></div></div></div></div></div><div class="el-tabs__content"><div role="tabpanel" aria-hidden="true" id="pane-null" aria-labelledby="tab-null" class="el-tab-pane tab-pane-item" style="display:none;"><div class="el-card box-card is-always-shadow"><div class="el-card__header"><div class="clearfix"><span class="custom-tag el-tag">header</span></div></div><div class="el-card__body"> <div class="text item item-header"><div class="div-text">KEY</div><div class="div-require">REQUIRE</div>DESCRIPTION
+                    </div> <div class="text item"><div class="div-text">Authorization</div><div class="div-require">是</div>Bearer  `access_token`
+                            </div></div></div> <div class="el-card box-card is-always-shadow"><div class="el-card__header"><div class="clearfix"><span class="custom-tag el-tag">body</span></div></div><div class="el-card__body"> <div class="text item item-header"><div class="div-text">KEY</div> <div class="div-require">TYPE</div> <div class="div-require">REQUIRE</div>
+                         DESCRIPTION
+                         <div class="div-default">DEFAULT</div></div> <div class="text item"><div class="el-tooltip div-text">
+                                    cid
+                                </div> <div class="div-require"><span class="el-tag el-tag--danger el-tag--mini">number</span></div> <div class="div-require">是</div>
+                           商户id
+                            <div class="el-tooltip div-default">商户id</div></div><div class="text item"><div class="el-tooltip div-text">
+                                    type
+                                </div> <div class="div-require"><span class="el-tag el-tag--danger el-tag--mini">number</span></div> <div class="div-require">是</div>
+                           0 维修汇总 1 服务项目 2 配件 3 套餐
+                            <div class="el-tooltip div-default">报表类型</div></div><div class="text item"><div class="el-tooltip div-text">
+                                    start
+                                </div> <div class="div-require"><span class="el-tag el-tag--danger el-tag--mini">date</span></div> <div class="div-require">是</div>
+                           2000-01-01
+                            <div class="el-tooltip div-default">开始时间</div></div><div class="text item"><div class="el-tooltip div-text">
+                                    end
+                                </div> <div class="div-require"><span class="el-tag el-tag--danger el-tag--mini">date</span></div> <div class="div-require">是</div>
+                           2000-01-01
+                            <div class="el-tooltip div-default">结束时间</div></div><div class="text item"><div class="el-tooltip div-text">
+                                    group
+                                </div> <div class="div-require"><span class="el-tag el-tag--danger el-tag--mini">string</span></div> <div class="div-require">是</div>
+                           见报表分组说明
+                            <div class="el-tooltip div-default">分组类型</div></div><div class="text item"><div class="el-tooltip div-text">
+                                    comno
+                                </div> <div class="div-require"><span class="el-tag el-tag--danger el-tag--mini">string</span></div> <div class="div-require">是</div>
+                           类似 A01,A02 逗号分隔
+                            <div class="el-tooltip div-default">门店参数</div></div><div class="text item"><div class="el-tooltip div-text">
+                                    company
+                                </div> <div class="div-require"><span class="el-tag el-tag--danger el-tag--mini">string</span></div> <div class="div-require">是</div>
+                           类似 1
+                            <div class="el-tooltip div-default">商户参数</div></div><div class="text item"><div class="el-tooltip div-text">
+                                    day
+                                </div> <div class="div-require"><span class="el-tag el-tag--danger el-tag--mini">string</span></div> <div class="div-require">是</div>
+                           0 综合报表|各角度分析  1 日报表  2 月报表
+                            <div class="el-tooltip div-default">报表分析类型</div></div><div class="text item"><div class="el-tooltip div-text">
+                                    total
+                                </div> <div class="div-require"><span class="el-tag el-tag--danger el-tag--mini">number</span></div> <div class="div-require">是</div>
+                           0 不需要  1需要
+                            <div class="el-tooltip div-default">是否获取合计金额</div></div><div class="text item"><div class="el-tooltip div-text">
+                                    rule
+                                </div> <div class="div-require"><span class="el-tag el-tag--danger el-tag--mini">number</span></div> <div class="div-require">是</div>
+                           待留权限校验需要 后台给指定值 先预留 默认 0
+                            <div class="el-tooltip div-default">权限ID</div></div></div></div> <div class="el-tabs el-tabs--top"><div class="el-tabs__header is-top"><div class="el-tabs__nav-wrap is-top"><div class="el-tabs__nav-scroll"><div role="tablist" class="el-tabs__nav is-top" style="transform:translateX(-0px);"><div class="el-tabs__active-bar is-top" style="width:0px;transform:translateX(0px);ms-transform:translateX(0px);webkit-transform:translateX(0px);"></div></div></div></div></div><div class="el-tabs__content"><span class="custom-tag el-tag" style="position:absolute;top:15px;right:0%;">response</span> <div role="tabpanel" aria-hidden="true" id="pane-null" aria-labelledby="tab-null" class="el-tab-pane" style="display:none;"><pre><code class="hljs json">{
+    <span class="hljs-attr">"status"</span>: <span class="hljs-string">"success"</span>,
+    <span class="hljs-attr">"data"</span>: {
+        <span class="hljs-attr">"data"</span>: [
+            {
+                <span class="hljs-attr">"num"</span>: <span class="hljs-number">46</span>,
+                <span class="hljs-attr">"part"</span>: <span class="hljs-number">1887.133333</span>,
+                <span class="hljs-attr">"comno"</span>: <span class="hljs-string">"A01"</span>,
+                <span class="hljs-attr">"group"</span>: <span class="hljs-string">"一般修理"</span>,
+                <span class="hljs-attr">"price"</span>: <span class="hljs-number">40455</span>,
+                <span class="hljs-attr">"amount"</span>: <span class="hljs-number">39627.723598</span>,
+                <span class="hljs-attr">"server"</span>: <span class="hljs-number">4768</span>,
+                <span class="hljs-attr">"discount"</span>: <span class="hljs-number">827.2764020000031</span>,
+                <span class="hljs-attr">"profit"</span>: <span class="hljs-number">32972.590265</span>,
+                <span class="hljs-attr">"profit_rate"</span>: <span class="hljs-number">0.8320586516522518</span>
+            },
+            {
+                <span class="hljs-attr">"num"</span>: <span class="hljs-number">1</span>,
+                <span class="hljs-attr">"part"</span>: <span class="hljs-number">240.5</span>,
+                <span class="hljs-attr">"comno"</span>: <span class="hljs-string">"A01"</span>,
+                <span class="hljs-attr">"group"</span>: <span class="hljs-string">""</span>,
+                <span class="hljs-attr">"price"</span>: <span class="hljs-number">400</span>,
+                <span class="hljs-attr">"amount"</span>: <span class="hljs-number">400</span>,
+                <span class="hljs-attr">"server"</span>: <span class="hljs-number">0</span>,
+                <span class="hljs-attr">"discount"</span>: <span class="hljs-number">0</span>,
+                <span class="hljs-attr">"profit"</span>: <span class="hljs-number">159.5</span>,
+                <span class="hljs-attr">"profit_rate"</span>: <span class="hljs-number">0.39875</span>
+            },
+            {
+                <span class="hljs-attr">"num"</span>: <span class="hljs-number">1</span>,
+                <span class="hljs-attr">"part"</span>: <span class="hljs-number">38</span>,
+                <span class="hljs-attr">"comno"</span>: <span class="hljs-string">"A01"</span>,
+                <span class="hljs-attr">"group"</span>: <span class="hljs-string">"一般维修"</span>,
+                <span class="hljs-attr">"price"</span>: <span class="hljs-number">80</span>,
+                <span class="hljs-attr">"amount"</span>: <span class="hljs-number">-6.956522</span>,
+                <span class="hljs-attr">"server"</span>: <span class="hljs-number">0</span>,
+                <span class="hljs-attr">"discount"</span>: <span class="hljs-number">86.956522</span>,
+                <span class="hljs-attr">"profit"</span>: <span class="hljs-number">-44.956522</span>,
+                <span class="hljs-attr">"profit_rate"</span>: <span class="hljs-number">6.462499795156258</span>
+            },
+            {
+                <span class="hljs-attr">"num"</span>: <span class="hljs-number">12</span>,
+                <span class="hljs-attr">"part"</span>: <span class="hljs-number">0</span>,
+                <span class="hljs-attr">"comno"</span>: <span class="hljs-string">"A01"</span>,
+                <span class="hljs-attr">"group"</span>: <span class="hljs-string">"年审"</span>,
+                <span class="hljs-attr">"price"</span>: <span class="hljs-number">4020</span>,
+                <span class="hljs-attr">"amount"</span>: <span class="hljs-number">3320.000003</span>,
+                <span class="hljs-attr">"server"</span>: <span class="hljs-number">434</span>,
+                <span class="hljs-attr">"discount"</span>: <span class="hljs-number">699.9999969999999</span>,
+                <span class="hljs-attr">"profit"</span>: <span class="hljs-number">2886.000003</span>,
+                <span class="hljs-attr">"profit_rate"</span>: <span class="hljs-number">0.869277108551858</span>
+            }
+        ]
+    },
+    <span class="hljs-attr">"last_update_date"</span>: <span class="hljs-string">"2019-07-22 17:27:30"</span>
+}</code></pre></div></div></div></div> <div role="tabpanel" aria-hidden="true" id="pane-null" aria-labelledby="tab-null" class="el-tab-pane" style="display:none;"><div class="el-card box-card is-always-shadow"><!----><div class="el-card__body"> <div class="text item"><pre><code class="hljs json">返回字典说明 
+{
+    "num": 单数,
+    "part": 配件成本,
+    "comno": "门店代号",
+    "group": "分组名称",
+    "price": 合计金额,
+    "amount": 实收金额,
+    "server": 服务成本,
+    "day": "日期",
+    "discount": 减收成本,
+    "profit":毛利,
+    "profit_rate": 毛利率,
+    'cash': 现金,
+    'card': 刷卡,
+    'wepay': 微信,
+    'alipay': 支付宝,
+    'otherpay'：其它金额,
+    'arrear'：挂账,
+    'business_type: 业务类型合计,
+    'discount': 减收,
+    'acc_type': 支付类型,
+    'c_total_discount': 折扣金额,
+    'car_process': 工单进程,
+    'balance': 坏账,
+}</code></pre></div></div></div></div></div></div></div></div></div></div></div> <div><ul class="right-nav"></ul></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">上次更新: </span> <span class="time">2019-04-17  17:47:12 </span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/guide/user/captcha.html" class="prev">
+          验证码
+        </a></span> <span class="next"><a href="/guide/report/server.html">
+          服务项目分析
+        </a>
+        →
+      </span></p></div> <div class="page-bottom">百思易科技有限公司</div></main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.aea6f530.js" defer></script><script src="/assets/js/3.f140dbeb.js" defer></script><script src="/assets/js/2.7cdc948c.js" defer></script><script src="/assets/js/34.e1f50fa8.js" defer></script><script src="/assets/js/4.b20c5b42.js" defer></script>
+  </body>
+</html>
